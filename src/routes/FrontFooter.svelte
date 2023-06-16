@@ -1,0 +1,1 @@
+<p class="bg-background">This is the footer</p>

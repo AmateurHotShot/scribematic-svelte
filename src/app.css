@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn {
+		@apply bg-gradient-to-r from-blue-700 to-blue-400 flex justify-center align-middle items-center text-white font-bold py-3 px-4 rounded-lg;
+	}
+
+	.bg-gradient {
+		@apply bg-gradient-to-r from-blue-700 to-blue-400;
+	}
+}
