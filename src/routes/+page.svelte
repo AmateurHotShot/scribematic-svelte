@@ -13,6 +13,15 @@
 		{ icon: 'dashboard', title: 'Custom Templates', subtitle: 'Create your own templates to tech our AI how to write notes like you.' },
 		{ icon: 'translate', title: 'Multi-language', subtitle: 'Scribematic understands audio in all major languages.' }
 	]
+
+	const lastFeatures = [
+  { icon: 'material-symbols:avg-pace-rounded', title: 'Shorten Your Day' },
+  { icon: 'ic:outline-receipt-long', title: 'Get rid of hours of documentation' },
+  { icon: 'ic:outline-dvr', title: 'Let Scribematic write your notes for you during the appointment' },
+  { icon: 'ic:outline-mouse', title: "With a single click, Scribematic's AI will create an accurate and complete medical note of each patient visit" },
+  { icon: 'material-symbols:verified-user-outline-rounded', title: 'HIPAA compliant' },
+  { icon: 'ic:outline-work-history', title: 'When your last patient checks out, so will you' }
+]
 </script>
 
 <div class="p-4 flex flex-col items-center gap-2 max-w-5xl mx-auto">
@@ -52,6 +61,16 @@
 				<p class="font-light text-sm text-white/50">{advantage.subtitle}</p>
 			</div>
 		</div>
+		{/each}
+	</div>
+
+	<div class="grid grid-cols-2 md:grid-cols-3 place-items-stretch text-white/80 text-sm font-light">
+		{#each lastFeatures as feature}
+			<div class="flex flex-col gap-1 items-center justify-between space-y-2 m-8">
+				<iconify-icon icon={`${feature.icon}`} width="30" class="text-blue-400" />
+				<p class="tracking-wide">{feature.title}</p>
+				<div class="bg-white/10 w-full h-[1.5px] "></div>
+			</div>
 		{/each}
 	</div>
 

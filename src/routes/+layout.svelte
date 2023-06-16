@@ -8,7 +8,7 @@
 
 <div class="flex flex-col min-h-screen text-white bg-background">
 	<TopNav />
-	<div class="grow bg-background pt-20">
+	<div class="grow pt-20">
 		<slot />
 	</div>
 	<FrontFooter />
